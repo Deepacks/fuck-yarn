@@ -1,0 +1,43 @@
+{
+  "name": "fuck-yarn",
+  "version": "1.2.3",
+  "description": "Removes `node_modules` & runs `yarn install`",
+  "keywords": [
+    "yarn",
+    "install",
+    "node_modules",
+    "fuck",
+    "node",
+    "node.js"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "bin": {
+    "fuck-yarn": "./bin/fuck-yarn.js"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vladimir Cuneaz",
+    "email": "vladimirsette.vc@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deepacks/fuck-yarn.git"
+  },
+  "scripts": {
+    "prettier": "prettier --list-different './**/*.js'",
+    "prettier:fix": "npm run prettier -- --write --no-list-different",
+    "release": "np --no-2fa",
+    "start": "node ./bin/fuck-yarn.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "del": "^6.0.0",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "np": "^7.0.0",
+    "prettier": "^2.2.1"
+  }
+}
